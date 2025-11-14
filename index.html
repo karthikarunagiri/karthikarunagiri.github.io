@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Karthik Arunagiri — Portfolio</title>
+  <meta name="description" content="Portfolio of Karthik Arunagiri — projects and links to GitHub." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+  <header class="bg-white border-b">
+    <div class="max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-semibold">Karthik Arunagiri</h1>
+        <p class="text-sm text-gray-600">Data & Software Projects • GitHub portfolio</p>
+      </div>
+      <nav class="space-x-4 text-sm">
+        <a href="#work" class="hover:underline">Work</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="https://github.com/karthikarunagiri" target="_blank" rel="noopener" class="px-3 py-2 border rounded">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-10">
+    <section class="grid md:grid-cols-3 gap-8 items-start">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl font-bold">Hi, I’m Karthik.</h2>
+        <p class="mt-4 text-gray-700">I build projects that demonstrate software engineering and data skills. This site links to my code and short project summaries to show what I’ve built.</p>
+
+        <div id="work" class="mt-8">
+          <h3 class="text-xl font-semibold">Selected Experience</h3>
+          <article class="mt-4 p-4 bg-white rounded shadow-sm border">
+            <h4 class="font-medium">Role — Company</h4>
+            <p class="text-sm text-gray-600">Dates</p>
+            <ul class="mt-2 list-disc list-inside text-gray-700">
+              <li>Bulleted achievement or responsibility with a measurable outcome.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <aside class="bg-white p-4 rounded shadow-sm border">
+        <h3 class="font-semibold">Quick Info</h3>
+        <dl class="mt-3 text-sm text-gray-700">
+          <div><dt class="font-medium">Location</dt><dd>United Kingdom</dd></div>
+          <div class="mt-2"><dt class="font-medium">Email</dt><dd><a href="mailto:you@example.com" class="text-indigo-600">you@example.com</a></dd></div>
+        </dl>
+        <div class="mt-4">
+          <a href="#projects" class="inline-block w-full text-center px-4 py-2 border rounded">View projects</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" class="mt-10">
+      <h3 class="text-2xl font-semibold">Projects</h3>
+      <div class="mt-4 grid md:grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded border shadow-sm">
+          <h4 class="font-medium">Project-1</h4>
+          <p class="text-sm text-gray-600">Short summary</p>
+          <p class="mt-2 text-gray-700"><strong>Tech:</strong> Python, Flask, Docker</p>
+          <div class="mt-3 flex gap-2 text-sm">
+            <a href="https://github.com/karthikarunagiri/project-1" target="_blank" rel="noopener" class="underline">Code</a>
+          </div>
+        </div>
+      </div>
+      <p class="mt-6 text-sm text-gray-600">More code on <a href="https://github.com/karthikarunagiri" target="_blank" rel="noopener" class="text-indigo-600 underline">my GitHub</a>.</p>
+    </section>
+
+    <section id="contact" class="mt-12 bg-white p-6 rounded border shadow-sm">
+      <h3 class="text-xl font-semibold">Contact</h3>
+      <p class="mt-2 text-gray-700">Email: <a href="mailto:you@example.com" class="text-indigo-600">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="max-w-4xl mx-auto px-6 py-6 text-sm text-gray-500">
+    © <span id="year"></span> Karthik Arunagiri
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
